@@ -12,7 +12,7 @@ while (hak>0):
     tahmin = int(input("Prediction:"))
 
     if (sayi == tahmin):
-        print(f"Congruculations. Your Grade: {(100 - (100/try) * (sayac - 1))}")
+        print(f"Congratulations. Your Grade: {(100 - (100/try) * (sayac - 1))}")
         break
     elif (sayi>tahmin):
         print("More")
