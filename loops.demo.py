@@ -2,22 +2,22 @@ import random
 
 sayi = random.randint(1,100)
 
-can = int(input("Kaç hak kullanmak istersiniz: "))
-hak = can
+try = int(input("How many try do you want?: "))
+hak = try
 sayac = 0
 
 while (hak>0):
     hak -= 1
     sayac += 1
-    tahmin = int(input("Tahmin:"))
+    tahmin = int(input("Prediction:"))
 
     if (sayi == tahmin):
-        print(f"Tebrikler {sayac}.defada bildiniz. Toplam puanınız: {(100 - (100/can) * (sayac - 1))}")
+        print(f"Congruculations. Your Grade: {(100 - (100/try) * (sayac - 1))}")
         break
     elif (sayi>tahmin):
-        print("Yukarda")
+        print("More")
     else:
-        print("Aşağıda")
+        print("Less")
     if (hak == 0):
-        print(f"Hakkınız bitmiştir. Tutulan say: {sayi} ")
+        print(f"Your turn is over. the predicted number: {sayi} ")
      
