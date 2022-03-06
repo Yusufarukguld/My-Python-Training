@@ -48,6 +48,7 @@ class Quiz:
         Totalgrade = round(self.score * grade)
         print(f"You achieved {self.score} out of {len(self.questions)} questions")
         print("Grade:",Totalgrade)
+        
     def displayProgress(self):
         totalQuestion = len(self.questions)
         questionNumber = self.questionIndex + 1
